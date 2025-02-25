@@ -1,0 +1,523 @@
+/* TABLE OF CONTENTS */
+/* --------------------
+1. General
+2. Navbar
+3. Banner
+4. About
+5. Services
+6. Portfolio
+7. Blog
+8. Contact
+9. Footer
+-------------------- */
+
+/* Google Font CDN Link  */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ---------------------
+    1. General CSS
+--------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -------- Variable Define -------- */
+:root {
+    /* Background Color  */
+    --primary-color: #4458dc;
+    --secondary-color: #854fee;
+    --bg-white: #fff;
+    --bg-light: #faf8ff;
+    --bg-black: #000;
+    --bg-gray: #eee;
+    --gradient-color: linear-gradient(to right, var(--primary-color) 0%, var(--secondary-color) 100%), radial-gradient(circle at top left, var(--primary-color), var(--secondary-color));
+
+    /* text color  */
+    --text-primary: #4458dc;
+    --text-secondary: #854fee;
+    --text-white: #fff;
+    --text-black: #000;
+    --text-gray: #777;
+
+    /* font family  */
+    --primary-font: "Rubik", serif;
+    --secondary-font: "Roboto", serif;
+}
+
+body {
+    font-family: var(--secondary-font);
+    width: 100%;
+    background-image: url('./../images/body-bg.png.webp');
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* scrollbar CSS  */
+::-webkit-scrollbar {
+    width: .25rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+section {
+    padding: 6rem 0 5rem;
+}
+
+.main-btn {
+    display: inline-block;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 2.875rem;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: .3125rem;
+    box-shadow: 0 .625rem 1.875rem rgb(118 85 255 / 30%);
+    border: .125rem double transparent;
+    padding: 0 2.625rem;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.primary-btn {
+    background: var(--gradient-color);
+    color: var(--text-white);
+}
+
+.primary-btn:hover {
+    border-color: var(--secondary-color);
+    background: var(--bg-white);
+    color: var(--text-secondary);
+    box-shadow: none;
+}
+
+.secondary-btn {
+    background: var(--bg-white);
+    color: var(--text-secondary);
+    border-color: var(--secondary-color);
+}
+
+.secondary-btn:hover {
+    background: var(--gradient-color);
+    color: var(--text-white);
+    box-shadow: none;
+}
+
+h1 {
+    font-size: 4.375rem;
+    line-height: 3.75rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1.25rem;
+    font-family: var(--primary-font);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--text-black);
+    margin-bottom: 1.5625rem;
+    line-height: 3.4375rem;
+    font-family: var(--primary-font);
+}
+
+h3 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: .9375rem;
+    line-height: 3.125rem;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-black);
+    margin-bottom: 2.1875rem;
+}
+
+p {
+    font-size: .9375rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+    color: var(--text-gray);
+}
+
+/* ---------------------
+    2. Navbar CSS
+--------------------- */
+
+.header_wrapper .navbar {
+    padding: .9375rem 0;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.header_wrapper .navbar-brand img {
+    max-width: 10rem;
+    height: auto;
+}
+
+.header_wrapper .navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.header_wrapper .nav-item {
+    margin: 0 .625rem;
+}
+
+.header_wrapper .nav-item .nav-link {
+    font-family: var(--primary-font);
+    font-size: .9375rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--text-black);
+    display: inline-block;
+}
+
+.header_wrapper .nav-item .nav-link::after {
+    position: absolute;
+    width: 0;
+    height: .125rem;
+    left: 0;
+    content: '';
+    background: var(--primary-color);
+    transition: .3s;
+    bottom: 0;
+}
+
+.header_wrapper .nav-item .nav-link:hover,
+.header_wrapper .nav-item .nav-link.active {
+    color: var(--text-primary);
+}
+
+.header-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-white);
+    -webkit-box-shadow: 0 .25rem .375rem 0 rgba(12, 0, 46, .05);
+    box-shadow: 0 .25rem .375rem 0 rgba(12, 0, 46, .05);
+}
+
+/* ---------------------
+    3. Banner CSS
+--------------------- */
+
+.banner_wrapper {
+    padding-top: 6.875rem;
+    z-index: 1;
+    background-image: url('./../images/home-banner.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.banner_wrapper .banner-content {
+    vertical-align: middle;
+    align-self: center;
+}
+
+.banner_wrapper .banner-content h2::after {
+    content: '';
+    width: 60%;
+    height: .125rem;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    background: var(--bg-black);
+    overflow-x: hidden;
+}
+
+/* ---------------------
+    4. About CSS
+--------------------- */
+
+.about_wrapper .single-logo-item {
+    width: 100%;
+    height: 6.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: .0625rem solid transparent;
+    box-shadow: none;
+    -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+.about_wrapper .single-logo-item:hover {
+    border: .0625rem solid transparent;
+    box-shadow: 0 .5rem 1.875rem rgb(118 85 225 / 15%);
+}
+
+.about_wrapper .client-info {
+    padding: 1.5625rem 1.875rem;
+    background: var(--bg-light);
+    position: relative;
+    margin-top: 1.5625rem;
+}
+
+.about_wrapper .client-info::before {
+    content: '';
+    position: absolute;
+    top: -1.5625rem;
+    left: -3.4375rem;
+    background: url('./../images/client-info.webp');
+    background-repeat: no-repeat;
+    height: 10.9375rem;
+    width: 10.9375rem;
+}
+
+.about_wrapper .client-info .large {
+    color: var(--text-secondary);
+    font-family: var(--primary-font);
+    font-size: 6.25rem;
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+}
+
+.about_wrapper .client-info .small {
+    text-align: left;
+    color: var(--text-black);
+    font-family: var(--primary-font);
+    font-size: 1.25rem;
+    margin-left: 1.25rem;
+    font-weight: 500;
+}
+
+.about_wrapper .client-info .call-now span {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: var(--text-black);
+}
+
+.about_wrapper .client-info .call-now p {
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    margin-bottom: .3125rem;
+}
+
+/* ---------------------
+    5. Services CSS
+--------------------- */
+
+.services_wrapper .card {
+    background: var(--bg-light);
+    cursor: pointer;
+    -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+.services_wrapper .card:hover {
+    box-shadow: 0 .9375rem 1.875rem rgb(77 87 222 / 30%);
+    background: var(--bg-white);
+}
+
+/* ---------------------
+    6. Portfolio CSS
+--------------------- */
+
+.portfolio_wrapper .nav-link {
+    font-size: .9375rem;
+    font-weight: 500;
+    margin-right: .25rem;
+    color: var(--text-black);
+    text-transform: uppercase;
+}
+
+.portfolio_wrapper .nav-link.active {
+    color: var(--text-secondary);
+    background-color: transparent;
+}
+
+.portfolio_wrapper .portfolio-img {
+    position: relative;
+    cursor: pointer;
+}
+
+.portfolio_wrapper .portfolio-img .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+.portfolio_wrapper .portfolio-img:hover .overlay {
+    background: rgba(77, 87, 222, .5);
+}
+
+.portfolio_wrapper .portfolio-img .overlay i {
+    font-size: 6.25rem;
+    color: var(--text-white);
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+.portfolio_wrapper .portfolio-img:hover .overlay i {
+    opacity: 1;
+    visibility: visible;
+    top: 50%;
+    left: 50%;
+}
+
+/* ---------------------
+    7. Blog CSS
+--------------------- */
+
+.blog_wrapper .card {
+    position: relative;
+    cursor: pointer;
+}
+
+.blog_wrapper .card img {
+    height: 12.5rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog_wrapper .blog-details {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    background-color: rgba(34, 34, 34, .8);
+    color: var(--text-white);
+    transition: all .3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog_wrapper .card:hover .blog-details {
+    background: rgba(68, 88, 220, .85);
+}
+
+.blog_wrapper .blog-details .border-line {
+    margin: .625rem 0;
+    background: var(--bg-white);
+    width: 100%;
+    height: .125rem;
+}
+
+/* ---------------------
+    8. Contact CSS
+--------------------- */
+
+.contact_wrapper .newsletter {
+    width: 100%;
+    height: 100%;
+    background-image: url('./../images/subscribe-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 9.375rem 0;
+}
+
+.contact_wrapper .newsletter input {
+    line-height: 3rem;
+    padding: 0 1.5625rem;
+    border: .125rem solid var(--bg-white);
+    background: transparent;
+    font-weight: 400;
+    border-radius: .3125rem;
+    color: var(--text-white);
+}
+
+.contact_wrapper .newsletter .form-control:focus {
+    color: var(--text-white);
+    background: transparent;
+    border-color: var(--bg-white);
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact_wrapper .newsletter .form-control::placeholder {
+    color: var(--text-white);
+}
+
+/* ---------------------
+    9. Footer CSS
+--------------------- */
+
+footer .footer-logo img {
+    max-width: 12.5rem;
+    height: auto;
+}
+
+footer .social-icons h5 {
+    text-transform: uppercase;
+}
+
+footer .social-icons li {
+    margin: .375rem;
+}
+
+footer .social-icons li a {
+    line-height: 1.875rem;
+    font-size: 1.5625rem;
+    display: inline-block;
+    color: var(--text-black);
+    text-align: center;
+    margin: 0 .625rem;
+}
+
+footer .social-icons li a:hover {
+    color: var(--text-primary);
+}
+
+footer .footer-text {
+    font-size: .6875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+
+footer .footer-text a {
+    color: var(--text-primary);
+}

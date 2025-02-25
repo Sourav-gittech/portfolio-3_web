@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5 CSS CDN Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awsome 6.7 CSS Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive_style.css">
+
+    <!-- FAVICON  -->
+    <link rel="icon" href="./assets/images/favicon.png">
+
+    <title>Portfolio</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
+
+    <!-- Navbar Section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <img src="./assets/images/logo.png" alt="#logo" class="img-fluid">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fas fa-stream navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="home" class="banner_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 order-lg-1 order-2 banner-content">
+                    <h2 class="text-uppercase position-relative">Hello</h2>
+                    <h1 class="text-uppercase">I am Jeo Link</h1>
+                    <h5 class="text-uppercase">Senior Frontend Designer</h5>
+                    <div class="mt-5">
+                        <a href="#contact" class="main-btn primary-btn">Hire Me</a>
+                        <a href="./assets/cv/demo_resmue.pdf" class="main-btn secondary-btn">Get CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-lg-2 order-1">
+                    <div class="top-right-img">
+                        <img src="./assets/images/home-right.webp" alt="#bannerImg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about_wrapper">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <img src="./assets/images/about-us.webp" alt="#aboutImg" class="img-fluid">
+                </div>
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h3>Let's <br>Introduce about <br>myself</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique modi distinctio inventore
+                        voluptates excepturi alias, in architecto odio dolor quam cum nesciunt.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea earum, ut quam eveniet excepturi
+                        blanditiis fugiat illum sunt, recusandae suscipit aliquam quisquam alias porro harum. Ipsam
+                        veritatis voluptatibus eos tempore!</p>
+                    <a href="./assets/cv/demo_resmue.pdf" class="main-btn primary-btn mt-4">Download CV</a>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="./assets/images/client-img/logo1.webp" alt="#logo1" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="./assets/images/client-img/logo2.webp" alt="#logo2" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="./assets/images/client-img/logo3.webp" alt="#logo3" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="./assets/images/client-img/logo4.webp" alt="#logo4" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="./assets/images/client-img/logo5.webp" alt="#logo5" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="./assets/images/client-img/logo6.webp" alt="#logo6" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="./assets/images/client-img/logo7.webp" alt="#logo7" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="./assets/images/client-img/logo8.webp" alt="#logo8" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo-item">
+                                <img src="./assets/images/client-img/logo9.webp" alt="#logo9" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg-2 col-lg-4 col-md-10">
+                    <div class="client-info">
+                        <div class="d-flex">
+                            <div class="large"><span id="count">10</span></div>
+                            <span class="small">Years of<br>Working<br>Experience</span>
+                        </div>
+                        <div class="call-now d-flex py-4">
+                            <div>
+                                <span class="fas fa-phone"></span>
+                            </div>
+                            <div class="ms-4">
+                                <p>Call me now</p>
+                                <h5>(+91) 323-1245-890</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h2>SERVICE OFFERS</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptates, consequuntur nam
+                        natus esse repellendus. <br class="d-none d-lg-block">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Animi, molestiae.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 text-center py-5 px-3">
+                        <div>
+                            <img src="./assets/images/services-img/mouse.webp" alt="#serviceImg1" class="img-fluid">
+                        </div>
+                        <h5 class="text-uppercase mt-4 mb-3">WEB DEVELOPMENT</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas possimus veniam dolor.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 text-center py-5 px-3">
+                        <div>
+                            <img src="./assets/images/services-img/seo.webp" alt="#serviceImg2" class="img-fluid">
+                        </div>
+                        <h5 class="text-uppercase mt-4 mb-3">SEO OPTIMIZE</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas possimus veniam dolor.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 text-center py-5 px-3">
+                        <div>
+                            <img src="./assets/images/services-img/ui-ux.webp" alt="#serviceImg3" class="img-fluid">
+                        </div>
+                        <h5 class="text-uppercase mt-4 mb-3">UI/UX DESIGN</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas possimus veniam dolor.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 text-center py-5 px-3">
+                        <div>
+                            <img src="./assets/images/services-img/website.webp" alt="#serviceImg4" class="img-fluid">
+                        </div>
+                        <h5 class="text-uppercase mt-4 mb-3">WEB DESIGN</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas possimus veniam dolor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-left mb-md-5 mb-2">
+                    <h2>QUALITY WORK <br>RECENTLY DONE PROJECT</h2>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-one-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one"
+                            aria-selected="true">Popular</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-two-tab" data-bs-toggle="pill" data-bs-target="#pills-two"
+                            type="button" role="tab" aria-controls="pills-two" aria-selected="false">Latest</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-three-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three"
+                            aria-selected="false">Upcoming</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-one" role="tabpanel"
+                        aria-labelledby="pills-one-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="./assets/images/portfolio/portfolio1.webp" alt="portfolioImg1"
+                                        class="img-fluid w-100">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <p>Animated, portfolio</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="./assets/images/portfolio/portfolio2.webp" alt="portfolioImg2"
+                                        class="img-fluid w-100">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <p>Animated, portfolio</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="./assets/images/portfolio/portfolio3.webp" alt="portfolioImg3"
+                                        class="img-fluid w-100">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <p>Animated, portfolio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="./assets/images/portfolio/portfolio4.webp" alt="portfolioImg4"
+                                        class="img-fluid w-100">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <p>Animated, portfolio</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="./assets/images/portfolio/portfolio5.webp" alt="portfolioImg5"
+                                        class="img-fluid w-100">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <p>Animated, portfolio</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="./assets/images/portfolio/portfolio6.webp" alt="portfolioImg6"
+                                        class="img-fluid w-100">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <p>Animated, portfolio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="./assets/images/portfolio/portfolio7.webp" alt="portfolioImg7"
+                                        class="img-fluid w-100">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <p>Animated, portfolio</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="./assets/images/portfolio/portfolio8.webp" alt="portfolioImg8"
+                                        class="img-fluid w-100">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <p>Animated, portfolio</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="portfolio-img">
+                                    <img src="./assets/images/portfolio/portfolio9.webp" alt="portfolioImg9"
+                                        class="img-fluid w-100">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                                <p>Animated, portfolio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h2>BLOG</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptates, consequuntur nam
+                        natus esse repellendus. <br class="d-none d-lg-block">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Animi, molestiae.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 p-0">
+                        <img src="./assets/images/blog/blog1.webp" alt="#blogImg1" class="img-fluid">
+                        <div class="blog-details">
+                            <div class="blog-text text-center">
+                                <h5 class="text-white mb-0">Social Life</h5>
+                                <div class="border-line"></div>
+                                <p class="text-white">Enjoy your social life together</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 p-0">
+                        <img src="./assets/images/blog/blog2.webp" alt="#blogImg2" class="img-fluid">
+                        <div class="blog-details">
+                            <div class="blog-text text-center">
+                                <h5 class="text-white mb-0">Food</h5>
+                                <div class="border-line"></div>
+                                <p class="text-white">Enjoy your social life together</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 p-0">
+                        <img src="./assets/images/blog/blog3.webp" alt="#blogImg3" class="img-fluid">
+                        <div class="blog-details">
+                            <div class="blog-text text-center">
+                                <h5 class="text-white mb-0">Policies</h5>
+                                <div class="border-line"></div>
+                                <p class="text-white">Enjoy your social life together</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 p-0">
+                        <img src="./assets/images/blog/blog4.webp" alt="#blogImg4" class="img-fluid">
+                        <div class="blog-details">
+                            <div class="blog-text text-center">
+                                <h5 class="text-white mb-0">Concentration</h5>
+                                <div class="border-line"></div>
+                                <p class="text-white">Enjoy your social life together</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact_wrapper mt-3 mt-md-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center px-4 newsletter">
+                    <h3 class="text-white">Get Update From Anywhere</h3>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, corporis?
+                    </p>
+                    <form action="#" class="row g-3 justify-content-center mt-4">
+                        <div class="col col-sm-6 col-lg-4">
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="Email address" required>
+                        </div>
+                        <div class="col col-auto">
+                            <button type="submit" class="main-btn secondary-btn border-white mb-3">Get Started</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container my-3">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="footer-logo mb-3 mb-md-0">
+                        <img src="./assets/images/logo.png" alt="#logo" class="img-fluid">
+                    </div>
+                    <div class="my-4 social-icons">
+                        <h5>Follow Me</h5>
+                        <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                            <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="https://youtube"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://dribbble.com"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://web.telegram.org"><i class="fa-brands fa-telegram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                    <p class="footer-text text-center my-2">Copyright &copy; 2025 All Rights Reserved. | <i
+                            class="far fa-heart"></i> <a href="#home">PORTFOLIO&trade;</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<!-- Bootstrap 5 JS CDN Link  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Custom JS  -->
+<script src="./assets/js/script.js"></script>
+
+</html>
